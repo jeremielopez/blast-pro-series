@@ -1,3 +1,5 @@
+import { UpdateComponent } from './modals/update/update.component';
+import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -43,7 +45,7 @@ import { ToastService } from './services/toast/toast.service';
 import { ModalService } from './services/modal/modal.service';
 
 @NgModule({
-  declarations: [],
+  declarations: [ConfirmDialogComponent, UpdateComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -130,6 +132,7 @@ import { ModalService } from './services/modal/modal.service';
     ToastService,
     ModalService,
     { provide: MAT_DATE_LOCALE, useValue: 'fr-FR' }
-  ]
+  ],
+  entryComponents: [ConfirmDialogComponent, UpdateComponent]
 })
 export class SharedModule {}
