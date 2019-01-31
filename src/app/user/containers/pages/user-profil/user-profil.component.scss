@@ -1,12 +1,18 @@
-.container {
+.all {
   height: calc(100vh - 64px);
   width: 100%;
+  background-image: url('../../../../../assets/asset-public.png');
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 230px;
+  overflow-y: hidden;
 }
 
 .mat-card {
   margin: auto;
   position: relative;
-  max-width: 550px;
+  width: 550px;
+  max-width: 95%;
   padding: 25px;
   padding-top: 100px;
   margin-top: 150px;
